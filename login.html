@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+.login-box {
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ccc;
+  background-color: #fff;
+}
+
+.login-box h2 {
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.login-box p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.login-box input[type="button"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.login-box input[type="button"]:hover {
+	background-color: #45a049;
+}
+
+#error-msg {
+	color: red;
+	text-align: center;
+	margin-top: 10px;
+}
+header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      nav li {
+        display: inline-block;
+        margin-left: 30px;
+      }
+      
+      nav li:first-child {
+        margin-left: 30px;
+      }
+      nav ul li:hover{
+  background-color: rgb(16, 155, 46);
+}
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      /* Main styles */
+      body {
+        padding: 20px;
+        background: url(images.html/hotel.jpg) no-repeat center fixed;
+        background-size: cover;
+        
+      }
+     /* footer {
+  background-color: #f8d405;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  position: bottom;
+  
+}*/
+
+
+    </style>
+</head>
+<body>
+     <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="order.html">order</a></li>
+            <li><a href="about us.html">about us</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="login-box">
+        <h2>Login here</h2>
+        <form>
+            <p>Email</p>
+            <input type="text"name="email" id="email" placeholder="enter your email address">
+            <p>password</p>
+            <input type="text" name="password" id="password" placeholder="enter your password">
+            <input type="button" value="login" onclick="validate()">
+            <p id="error-msg"></p>
+        </form>
+    </div>
+   <footer>
+      deliveroo
+      <p>join us for an esquisite dinning experience</p>
+    </footer>
+
+</body>
+</html>

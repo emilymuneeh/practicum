@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ordering html</title>
+    <style>
+    /* Header styles */
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+        }
+        
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: flex-end;
+        }
+        
+        nav li {
+          display: inline-block;
+          margin-left: 30px;
+        }
+        
+        nav li:first-child {
+          margin-left: 30px;
+        }
+        nav ul li:hover{
+  background-color: rgb(16, 150, 34);
+}
+        nav a {
+          color: #fff;
+          text-decoration: none;
+        } 
+        p{
+            color: chocolate;
+            font-size: 38px;
+        }
+        form {
+          margin-top: 50px;
+          text-align: left;margin-top: 150px;
+	        margin-left: auto;
+	        margin-right: auto;
+	        width: 350px;
+	        padding: 20px;
+	        border: 1px solid #ccc;
+	        border-radius: 10px;
+	        box-shadow: 0 0 10px #ccc;
+
+        }
+        
+        form h2 {
+          text-align: center;
+          font-size: 36px;
+          margin-bottom: 30px;
+        }
+        
+        .form-group {
+          margin: 10px;
+
+        }
+        
+        label {
+          display: block;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        
+        input, select, textarea {
+          font-size: 18px;
+          padding: 10px;
+          border-radius: 5px;
+          border: 2px solid #ccc;
+          width: 100%;
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+        
+        button[type="submit"] {
+          background-color: #f00;
+          color: #fff;
+          font-size: 24px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+        }
+        footer {
+         background-color: #ccc;
+          padding: 20px;
+          text-align: center;
+          font-size: 18px;
+}
+    </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="order.html">order</a></li>
+                <li><a href="about us.html">about us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="order">
+            <p>order with us</p>
+        </section>
+        <form action="/submit-order" method="post">
+          <h2>Order Form:</h2>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="item">Item:</label>
+            <select id="item" name="item" required>
+              <option value="">Select an item</option>
+              <option value="chicken-burger">Chicken Burger</option>
+              <option value="cheeseburger">Cheeseburger</option>
+              <option value="french-fries">French Fries</option>
+              <option value="milkshake">Milkshake</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+          </div>
+          <div class="form-group">
+            <label for="special-instructions">Special Instructions:</label>
+            <textarea id="special-instructions" name="special-instructions"></textarea>
+          </div>
+          <button type="submit">Submit Order</button>
+        </form>
+        
+        
+   
+    </main>
+    <footer>
+      deliveroo
+      <p>jin us for an esquisite dinning experience</p>
+    </footer>
+
+    
+</body>
+</html>
